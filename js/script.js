@@ -1,24 +1,22 @@
 $( "document" ).ready(function() {
-    var vowel =["a","e","i","o","u"];
-function pigLatinizer(string){
-    string = $(".input").val();
-    string = txt.split("");
-    string.forEach(function(letter){
-        var letter = string.charAt(string.index[letter]);
-        if (letter == vowel){
-            string.replaceFirst(letter, "");
-            string = string + letter;
-        } else if (letter ==! vowel){
-            string = string + "ay";
-        }
-    });
-    $("#output").text(string);
-}
+    var vowel= ["a","e","i","o","u"];
+    function pigLatinizer(word){
+        var word = $(".input").val();
+        word = word.split("");
+        word.forEach(function(letter){
+            if (letter.equals(vowel)){
+                var letter = word.split(letter);
+                word = word.concat(letter);
+            } else {
+                word = word.concat("ay");
+            }
+        });
+        $("#output").text(word);
+    }
 
-$("#button").click(function() {
-    console.log("Hello world!");
-    pigLatinizer();
-});
+    $("#button").click(function() {
+        pigLatinizer();
+    });
 
 
 });
