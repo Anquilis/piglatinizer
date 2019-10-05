@@ -13,6 +13,9 @@ body{
 button:hover {
     background-color: darkgray;
 }
+.input {
+    margin: 10px;
+}
 .output {
     border: 1px dashed;
     width: 200px;
