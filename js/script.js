@@ -7,7 +7,11 @@ $( "document" ).ready(function() {
             vowels.forEach(function(vowel){
                 if(letter===vowel){
                     //take letter out of word
+                    i = -1
+                    letter = word.splice(i+1);
+
                     //place letter into the end of word
+                    word = word.push(letter);
                 }else {
                     return;
                 }
