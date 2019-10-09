@@ -1,3 +1,4 @@
+/*all html files*/
 .container{
     text-align:center;
 }
@@ -21,11 +22,27 @@ nav {
 a {
     color: blue;
 }
-button:hover {
-    background-color: darkgray;
+.bar {
+    background-color: black;
+    height: 1px;
+    margin: 20px;
 }
+.icon {width:200px;}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.footer {
+    font-size: 12px;
+    font-weight: bolder;
+}
+/*index.html (actual project)*/
 .input {
     margin: 10px;
+}
+button:hover {
+    border-color: darkgray;
 }
 .output {
     border: 1px dashed;
@@ -35,16 +52,11 @@ button:hover {
     margin: auto;
     background-color: white;
 }
-.bar {
-    background-color: black;
-    height: 1px;
-    margin: 20px;
+#amazing {
+    width: 200px;
+    margin: 10px;
 }
-.footer {
-    font-size: 12px;
-    font-weight: bolder;
-}
+/*under_construction.html*/
 #under-construction{
-    width: 100px;
+    width: 200px;
 }
-img {width: 500px;}
