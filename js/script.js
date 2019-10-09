@@ -3,20 +3,20 @@ $( "document" ).ready(function() {
     function pigLatinizer(word){
         var word = $(".input").val();
         word = word.split("");
-        word.forEach(function(letter){
-            vowels.forEach(function(vowel){
-                if(letter===vowel){
-                    //take letter out of word
+        // word.forEach(function(letter){
+        //     vowels.forEach(function(vowel){
+        //         if(letter==!vowel){
+        //             //take letter out of word
+        //             word.shift(letter);
 
+        //             //place letter into the end of word
+        //             word.push(letter);
 
-                    //place letter into the end of word
-
-
-                }else {
-                    return;
-                }
-            });
-        });
+        //         }else if(letter === vowel){
+        //             stop();
+        //         }
+        //     });
+        // });
         newWord = word.join('');
         pigLatinWord = newWord.concat("ay");
         $("#output").text(pigLatinWord);
