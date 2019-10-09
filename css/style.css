@@ -6,12 +6,6 @@ body{
     background:grey;
     font-family: 'Times New Roman', Times, serif;
 }
-#title {
-    text-align: left;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 nav {
     display: flex;
     justify-content: flex-end;
@@ -32,6 +26,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    margin: 15px;
 }
 .footer {
     font-size: 12px;
@@ -58,5 +53,5 @@ button:hover {
 }
 /*under_construction.html*/
 #under-construction{
-    width: 200px;
+    width: 400px;
 }
