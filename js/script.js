@@ -4,11 +4,19 @@ $( "document" ).ready(function() {
         var input = $(".input").val();
         input = input.toLowerCase();
 
-        var restOfWord = input.slice(1,-1);
-        var firstLetter = input.slice(0,1);
-
+        inputArr = input.split(" ");
+        inputArr.forEach(function(word){
+                if(vowels.includes(word.charAt[0]))
+                var pigLatinWord = word.concat("way");
+                else {
+            for (i = 0; i < word.length; i++){
+                var restOfWord = inputArr.slice(i,word.length);
+                var firstLetter = inputArr.slice(0,i);
+                }
+            }
+        });
         var newWord = restOfWord+firstLetter;
-        var pigLatinWord = newWord.concat("ay");
+
         $("#output").text(pigLatinWord);
     }
 
