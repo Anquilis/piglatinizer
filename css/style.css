@@ -46,6 +46,10 @@ button:hover {
     padding: 50px;
     margin: auto;
     background-color: white;
+
+}
+#output {
+    vertical-align: top;
 }
 #amazing {
     width: 200px;
