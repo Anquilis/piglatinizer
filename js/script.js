@@ -10,9 +10,9 @@ $( "document" ).ready(function() {
         //clears the ouput div
         $(".output").html("");
         //splits the input into an array between the spaces
-        var inputArr = input.split(" ");
+        var inputArr = input.split(/[ ,.!'-]+/);
 
-        checkForVowels(inputArr);
+        checkForVowelsProto(inputArr);
 
         var pigLatinSentence = pigLatinArr.join(" ");
         $(".output").append("<p>"+pigLatinSentence+"</p>");
@@ -47,6 +47,30 @@ $( "document" ).ready(function() {
                 }
         });
     }
+
+function checkforVowelsProto(inputArr){
+    inputArr.forEach(function(word){
+                if(vowels.includes(word.charAt(0))){
+                    var vowelPigLatin = word.concat("way");
+                    pigLatinArr.push(vowelPigLatin);
+                } else {
+                    for(i = 0 ; vowels.includes(i); i++){
+                        if (vowels.includes(word.charAt(0))){
+                            var pigLatinWord = word.concat("ay");
+                            pigLatinArr.push(pigLatinWord);
+                        } else {
+                            //if it isn’t , take the letter out of the word
+                            var firstLetter = word.slice(0,i);
+                            var restOfWord = word.slice(i,word.length);
+                            //put it at the end of the word
+                            var newWord = restOfWord+firstLetter;
+                            pigLatinArr.push(vowelPigLatin);
+                        }
+                    }
+            }
+        });
+}
+
 
     $("#button").click(function() {
         pigLatinizer();

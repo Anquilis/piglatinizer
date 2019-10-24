@@ -16,16 +16,16 @@ Pig Latin takes the first consonant (or consonant cluster) of an English word, m
 - [x] Make small updates.
 ### JS
 - [x] Create a click handler to take user input and display it on the page
-- [ ] Using array methods, write the code that displays a word transformed into Pig latin and displays it on the page
+- [x] Using array methods, write the code that displays a word transformed into Pig latin and displays it on the page
 ### Wrap
 - [x] Push your changes!
 
 ## Day 2
 ### JS
-- [ ] Using array methods and loops, write the code to transform an entire sentence into pig latin.
-- [ ] Using string methods and your knowledge of conditionals, write the code that will Pig Latinize your sentence correctly for both vowels and consonants.
+- [x] Using array methods and loops, write the code to transform an entire sentence into pig latin.
+- [x] Using string methods and your knowledge of conditionals, write the code that will Pig Latinize your sentence correctly for both vowels and consonants.
 ### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 
 
 ## Projects Extensions:
